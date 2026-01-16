@@ -10,15 +10,15 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>agent-manager-java21</artifactId>
+    <artifactId>agent-manager-java8</artifactId>
     <packaging>jar</packaging>
 
-    <name>Agent Manager CLI - Java 21</name>
-    <description>CLI tool for managing AI agents - Java 21 version</description>
+    <name>Agent Manager CLI - Java 8</name>
+    <description>CLI tool for managing AI agents - Java 8 version</description>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -71,8 +71,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.plugin.version}</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>info.picocli</groupId>
@@ -112,7 +112,7 @@
                                 </filter>
                             </filters>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <finalName>agent-manager-java21</finalName>
+                            <finalName>agent-manager-java8</finalName>
                         </configuration>
                     </execution>
                 </executions>
