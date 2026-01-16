@@ -70,7 +70,7 @@ set "JAR_PATH=!SCRIPT_DIR!!JAR_NAME!"
 REM Check if JAR exists
 if not exist "!JAR_PATH!" (
     echo Error: !JAR_NAME! not found at !JAR_PATH!
-    echo Please run install.bat first or ensure JAR is in the same directory as this script.
+    echo Please run install.bat first or ensure the JAR is in the same directory as this script.
     exit /b 1
 )
 
